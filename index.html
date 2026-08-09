@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EventNight GmbH — Absperrgitter & Eventbedarf Mieten</title>
+  <meta name="description" content="EVENTNIGHT GmbH: Ihr professioneller Verleiher für Absperrgitter, Mannesmanngitter, Polizeigitter, Bauzäune und Erdnägel in Overath & deutschlandweit.">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ==========================================
+       HEADER & TOP BAR
+       ========================================== -->
+  <header class="site-header">
+    <div class="header-top-bar">
+      <div class="container header-top-flex">
+        <div class="top-info">
+          <span><i class="fas fa-phone"></i> 02204 / 7061616</span>
+          <span><i class="fas fa-envelope"></i> info@eventnight.de</span>
+          <span><i class="fas fa-location-dot"></i> 51491 Overath</span>
+        </div>
+        <div>
+          <span><i class="fas fa-clock yellow-text"></i> Mo - Fr: 09:00 - 18:00 Uhr</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="container header-container">
+      <a href="#home" class="site-logo">
+        <img src="images/Eventnight-Logo-ausgeschnitten.png" alt="EVENTNIGHT Logo">
+      </a>
+
+      <nav class="nav-menu">
+        <a href="#home" class="nav-link active">Startseite</a>
+        <a href="#mietpark" class="nav-link">Mietpark & Gitter</a>
+        <a href="#vorteile" class="nav-link">Vorteile</a>
+        <a href="#kontakt-info" class="nav-link">Kontakt</a>
+      </nav>
+
+      <button id="cartHeaderBtn" class="cart-header-btn">
+        <i class="fas fa-shopping-basket"></i>
+        <span>Anfragekorb</span>
+        <span id="cartCountBadge" class="cart-count-badge">0</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ==========================================
+       HERO BANNER
+       ========================================== -->
+  <section id="home" class="hero-banner">
+    <div class="container hero-grid">
+      <div class="hero-text-content">
+        <span class="hero-tag">Absperrgitter & Mietpark</span>
+        <h1 class="hero-title">Mannesmanngitter & Polizeigitter mieten</h1>
+        <p class="hero-desc">EVENTNIGHT GmbH — Ihr Spezialist für Absperrgitter, klappbare Polizeigitter, Erdnägel und Mobilzäune. Erstklassiges Material direkt ab Lager Overath.</p>
+
+        <div class="hero-usps">
+          <div class="usp-chip">
+            <i class="fas fa-truck"></i> Eigener Fuhrpark
+          </div>
+          <div class="usp-chip">
+            <i class="fas fa-shield-halved"></i> Gekoppelte Sicherheit
+          </div>
+          <div class="usp-chip">
+            <i class="fas fa-handshake"></i> Auf- & Abbau Service
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-quick-box">
+        <h3><i class="fas fa-bolt yellow-text"></i> Schnell-Anfrage</h3>
+        <p>Wählen Sie die benötigten Gitter und Erdnägel aus und senden Sie uns mit 1 Klick Ihre Mietanfrage.</p>
+        <a href="#mietpark" class="btn btn-yellow" style="width: 100%;">
+          <i class="fas fa-boxes-stacked"></i> Absperrgitter Katalog
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       PRODUCTS & RENTAL CATALOG (MIETPARK)
+       ========================================== -->
+  <section id="mietpark" class="section-padding">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-badge">Mietartikel Katalog</span>
+        <h2 class="section-title">Absperrgitter & Veranstaltungssicherung</h2>
+        <p class="section-subtitle">Wählen Sie die Produkte aus Ihrem Ordner und stellen Sie unverbindlich Ihre Anfrage zusammen.</p>
+      </div>
+
+      <div class="catalog-controls">
+        <div class="category-tabs">
+          <button class="cat-tab active" data-category="all">Alle Artikel</button>
+          <button class="cat-tab" data-category="absperrgitter">Absperrgitter & Mannesmann</button>
+          <button class="cat-tab" data-category="polizeigitter">Polizeigitter</button>
+          <button class="cat-tab" data-category="bauzaun">Bauzäune & Mobilzäune</button>
+          <button class="cat-tab" data-category="zubehoer">Erdnägel & Zubehör</button>
+        </div>
+      </div>
+
+      <div class="catalog-grid">
+        <!-- Product 1 (User Provided Photo) -->
+        <div class="product-card" data-id="p1" data-title="Mannesmanngitter / Absperrgitter" data-category="absperrgitter">
+          <div class="product-thumb">
+            <img src="images/Absperrgitter/Mannesmanngitter  Absperrgitter.jpg" alt="Mannesmanngitter Absperrgitter mieten">
+            <span class="product-badge">Top-Mietartikel</span>
+          </div>
+          <div class="product-details">
+            <h3 class="product-name">Mannesmanngitter / Absperrgitter</h3>
+            <div class="product-specs">
+              <span><i class="fas fa-ruler-horizontal"></i> L: 2,50m x H: 1,10m</span>
+              <span><i class="fas fa-weight-hanging"></i> Feuerverzinkt</span>
+            </div>
+            <p class="product-desc">Robustes Mannesmanngitter Personenleitsystem. Aushebesicher mit fest angeschweißten Haken und Standfüßen. Perfekt für Festnetzabsperrung und Umleitung.</p>
+            
+            <div class="product-order-row">
+              <div class="qty-picker">
+                <button class="qty-btn qty-minus">-</button>
+                <input type="text" class="qty-input" value="10" readonly>
+                <button class="qty-btn qty-plus">+</button>
+              </div>
+              <button class="add-cart-btn">
+                <i class="fas fa-plus"></i> In den Anfragekorb
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 2 (User Provided Photo) -->
+        <div class="product-card" data-id="p2" data-title="Polizeigitter klappbar (Hamburger Gitter)" data-category="polizeigitter">
+          <div class="product-thumb">
+            <img src="images/Absperrgitter/Polizeigitter klappbar.jpg" alt="Polizeigitter klappbar mieten">
+            <span class="product-badge">Schwerlast Gitter</span>
+          </div>
+          <div class="product-details">
+            <h3 class="product-name">Polizeigitter klappbar (Hamburger Gitter)</h3>
+            <div class="product-specs">
+              <span><i class="fas fa-ruler-horizontal"></i> Klappbare Ausführung</span>
+              <span><i class="fas fa-shield-cat"></i> Auftrittsstufe</span>
+            </div>
+            <p class="product-desc">Klappbares Polizeigitter mit rutschfester Auftrittsplatte für Einsatzkräfte. Maximale Standfestigkeit bei hohem Crowd-Druck.</p>
+            
+            <div class="product-order-row">
+              <div class="qty-picker">
+                <button class="qty-btn qty-minus">-</button>
+                <input type="text" class="qty-input" value="5" readonly>
+                <button class="qty-btn qty-plus">+</button>
+              </div>
+              <button class="add-cart-btn">
+                <i class="fas fa-plus"></i> In den Anfragekorb
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 3 (User Provided Photo) -->
+        <div class="product-card" data-id="p3" data-title="Erdnagel / Bodenanker für Gitter" data-category="zubehoer">
+          <div class="product-thumb">
+            <img src="images/Absperrgitter/erdnagel-300x300.jpg" alt="Erdnagel Bodenanker mieten">
+            <span class="product-badge">Sicherungs-Zubehör</span>
+          </div>
+          <div class="product-details">
+            <h3 class="product-name">Erdnagel / Bodenanker (30cm)</h3>
+            <div class="product-specs">
+              <span><i class="fas fa-ruler-vertical"></i> 300mm Länge</span>
+              <span><i class="fas fa-anchor"></i> Massivstahl</span>
+            </div>
+            <p class="product-desc">Massiver Erdnagel zur Verankerung von Bauzäunen, Mobilzäunen und Absperrgittern auf unbefestigtem Boden, Rasen oder Schotter.</p>
+            
+            <div class="product-order-row">
+              <div class="qty-picker">
+                <button class="qty-btn qty-minus">-</button>
+                <input type="text" class="qty-input" value="20" readonly>
+                <button class="qty-btn qty-plus">+</button>
+              </div>
+              <button class="add-cart-btn">
+                <i class="fas fa-plus"></i> In den Anfragekorb
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product-card" data-id="p4" data-title="Bauzaun / Mobilzaun (3,50m x 2,00m)" data-category="bauzaun">
+          <div class="product-thumb">
+            <img src="images/bauzaeune.jpg" alt="Bauzaun Mobilzaun mieten">
+            <span class="product-badge">Perimeterschutz</span>
+          </div>
+          <div class="product-details">
+            <h3 class="product-name">Bauzaun / Mobilzaun inkl. Betonfuß</h3>
+            <div class="product-specs">
+              <span><i class="fas fa-ruler-horizontal"></i> L: 3,50m x H: 2,00m</span>
+              <span><i class="fas fa-cubes"></i> Inkl. Sockel</span>
+            </div>
+            <p class="product-desc">Stabil geschweißtes Mobilzaunelement für den Geländeschutz und Veranstaltungseinfriedung. Inklusive schweren Beton-Sockeln.</p>
+            
+            <div class="product-order-row">
+              <div class="qty-picker">
+                <button class="qty-btn qty-minus">-</button>
+                <input type="text" class="qty-input" value="10" readonly>
+                <button class="qty-btn qty-plus">+</button>
+              </div>
+              <button class="add-cart-btn">
+                <i class="fas fa-plus"></i> In den Anfragekorb
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="product-card" data-id="p5" data-title="Bühnengitter / Crash Barrier" data-category="polizeigitter">
+          <div class="product-thumb">
+            <img src="images/event-tech.jpg" alt="Bühnengitter Crash Barrier">
+            <span class="product-badge">Bühnenschutz</span>
+          </div>
+          <div class="product-details">
+            <h3 class="product-name">Bühnengitter / Crash Barrier (Alu)</h3>
+            <div class="product-specs">
+              <span><i class="fas fa-ruler-horizontal"></i> B: 1,00m x H: 1,20m</span>
+              <span><i class="fas fa-layer-group"></i> Klappbar</span>
+            </div>
+            <p class="product-desc">Aluminium-Schwerlastgitter für den direkten Bühnenbereich mit Druckschutzplatte und Kabeldurchführung.</p>
+            
+            <div class="product-order-row">
+              <div class="qty-picker">
+                <button class="qty-btn qty-minus">-</button>
+                <input type="text" class="qty-input" value="5" readonly>
+                <button class="qty-btn qty-plus">+</button>
+              </div>
+              <button class="add-cart-btn">
+                <i class="fas fa-plus"></i> In den Anfragekorb
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="product-card" data-id="p6" data-title="Kabelbrücke Heavy-Duty (5 Kanäle)" data-category="zubehoer">
+          <div class="product-thumb">
+            <img src="images/mobiliar.jpg" alt="Kabelbrücke Gummi 5-Kanal">
+            <span class="product-badge">Kabelschutz</span>
+          </div>
+          <div class="product-details">
+            <h3 class="product-name">Kabelbrücke Heavy-Duty (5 Kanäle)</h3>
+            <div class="product-specs">
+              <span><i class="fas fa-truck-monster"></i> Bis 9t Belastung</span>
+              <span><i class="fas fa-road"></i> L: 1,00m</span>
+            </div>
+            <p class="product-desc">Schwerlast-Kabelbrücke aus Kautschuk mit gut sichtbarem gelben Sicherheitsdeckel zum Überfahren.</p>
+            
+            <div class="product-order-row">
+              <div class="qty-picker">
+                <button class="qty-btn qty-minus">-</button>
+                <input type="text" class="qty-input" value="5" readonly>
+                <button class="qty-btn qty-plus">+</button>
+              </div>
+              <button class="add-cart-btn">
+                <i class="fas fa-plus"></i> In den Anfragekorb
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       ABOUT & ADVANTAGES
+       ========================================== -->
+  <section id="vorteile" class="section-padding" style="background: #FAFAFA;">
+    <div class="container">
+      <div class="about-box">
+        <div class="text-center">
+          <span class="section-badge">Warum EVENTNIGHT?</span>
+          <h2 class="section-title">Direkter Verleih & Eigenes Gitterlager</h2>
+          <p class="section-subtitle">Wir verfügen über hunderte Meter Mannesmanngitter, Polizeigitter und Mobilzäune direkt auf Lager in Overath.</p>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-card">
+            <i class="fas fa-truck-fast"></i>
+            <h4>Pünktliche Anlieferung</h4>
+            <p>Direkt zum Veranstaltungsort oder zur Baustelle mit unseren Spezial-LKW.</p>
+          </div>
+
+          <div class="feature-card">
+            <i class="fas fa-helmet-safety"></i>
+            <h4>Auf- & Abbau Service</h4>
+            <p>Erfahrenes Team übernimmt die vorschriftsmäßige Verlegung & Montage.</p>
+          </div>
+
+          <div class="feature-card">
+            <i class="fas fa-calculator"></i>
+            <h4>Faire Paketpreise</h4>
+            <p>Transparente Kalkulation nach Mietdauer, Menge und Entfernung.</p>
+          </div>
+
+          <div class="feature-card">
+            <i class="fas fa-headset"></i>
+            <h4>Persönlicher Ansprechpartner</h4>
+            <p>Direkter telefonischer Support für schnelle Änderungen & Notfälle.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       CONTACT INFO SECTION
+       ========================================== -->
+  <section id="kontakt-info" class="section-padding">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-badge">Kontaktdaten</span>
+        <h2 class="section-title">Sprechen Sie direkt mit unserem Team</h2>
+        <p class="section-subtitle">Haben Sie Fragen zu Verfügbarkeiten oder Sondermaßen? Rufen Sie uns an oder schreiben Sie eine E-Mail.</p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-top: 2rem;">
+        <div style="background: #FFFFFF; border: 2px solid var(--border-color); border-top: 4px solid var(--brand-yellow); padding: 2rem; border-radius: var(--radius-md); text-align: center;">
+          <i class="fas fa-phone-volume" style="font-size: 2.5rem; color: var(--dark-bg); margin-bottom: 1rem;"></i>
+          <h4 style="font-size: 1.2rem; margin-bottom: 0.5rem;">Zentrale Overath</h4>
+          <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1rem;">Montag bis Freitag 09:00 - 18:00 Uhr</p>
+          <a href="tel:022047061616" class="btn btn-yellow btn-sm"><i class="fas fa-phone"></i> 02204 / 7061616</a>
+        </div>
+
+        <div style="background: #FFFFFF; border: 2px solid var(--border-color); border-top: 4px solid var(--brand-yellow); padding: 2rem; border-radius: var(--radius-md); text-align: center;">
+          <i class="fas fa-envelope-open-text" style="font-size: 2.5rem; color: var(--dark-bg); margin-bottom: 1rem;"></i>
+          <h4 style="font-size: 1.2rem; margin-bottom: 0.5rem;">E-Mail Anfrage</h4>
+          <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1rem;">Schreiben Sie uns Ihre Anfrage per Mail</p>
+          <a href="mailto:info@eventnight.de" class="btn btn-dark btn-sm"><i class="fas fa-envelope"></i> info@eventnight.de</a>
+        </div>
+
+        <div style="background: #FFFFFF; border: 2px solid var(--border-color); border-top: 4px solid var(--brand-yellow); padding: 2rem; border-radius: var(--radius-md); text-align: center;">
+          <i class="fas fa-location-dot" style="font-size: 2.5rem; color: var(--dark-bg); margin-bottom: 1rem;"></i>
+          <h4 style="font-size: 1.2rem; margin-bottom: 0.5rem;">Firmensitz & Lager</h4>
+          <p style="color: var(--text-muted); font-size: 0.95rem;">EVENTNIGHT GmbH<br>Olper Straße 33<br>51491 Overath, Deutschland</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       WARENKORB / ANFRAGE BASKET DRAWER (SLIDE-OUT)
+       ========================================== -->
+  <div id="cartDrawerOverlay" class="cart-drawer-overlay">
+    <div class="cart-drawer">
+      <div class="cart-drawer-header">
+        <h3><i class="fas fa-shopping-basket yellow-text"></i> Ihr Anfragekorb</h3>
+        <button id="cartDrawerClose" class="cart-drawer-close">&times;</button>
+      </div>
+
+      <div id="cartItemsBody" class="cart-items-body">
+        <!-- Rendered dynamically via main.js -->
+      </div>
+
+      <div class="cart-drawer-footer">
+        <div id="cartSuccessAlert" style="display: none; background: #D1FAE5; color: #065F46; padding: 1rem; border-radius: 4px; font-size: 0.85rem; margin-bottom: 1rem; border: 1px solid #A7F3D0;">
+          <i class="fas fa-check-circle"></i> Vielen Dank! Ihre Mietanfrage wurde erfolgreich übermittelt.
+        </div>
+
+        <form id="cartForm">
+          <div class="cart-form-section">
+            <div class="cart-form-group">
+              <label for="c_name">Name / Firma *</label>
+              <input type="text" id="c_name" class="cart-form-input" placeholder="z.B. Mustermann GmbH" required>
+            </div>
+            <div class="cart-form-group">
+              <label for="c_email">E-Mail-Adresse *</label>
+              <input type="email" id="c_email" class="cart-form-input" placeholder="name@firma.de" required>
+            </div>
+            <div class="cart-form-group">
+              <label for="c_phone">Telefonnummer *</label>
+              <input type="tel" id="c_phone" class="cart-form-input" placeholder="0170 1234567" required>
+            </div>
+            <div class="cart-form-group">
+              <label for="c_date">Mietzeitraum & Ort</label>
+              <input type="text" id="c_date" class="cart-form-input" placeholder="z.B. 12.-14. Juli in Köln">
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-yellow" style="width: 100%;">
+            <i class="fas fa-paper-plane"></i> Mietanfrage Jetzt Senden
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       FOOTER
+       ========================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-logo">
+            <img src="images/Eventnight-Logo-ausgeschnitten.png" alt="EVENTNIGHT Logo">
+          </div>
+          <p style="font-size: 0.875rem; line-height: 1.6;">EVENTNIGHT GmbH ist Ihr kompetenter Partner für Absperrgitter, Mobilzäune und Event-Sicherheitsausstattung in NRW & deutschlandweit.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Mietpark</h4>
+          <ul class="footer-links">
+            <li><a href="#mietpark">Mannesmanngitter</a></li>
+            <li><a href="#mietpark">Polizeigitter klappbar</a></li>
+            <li><a href="#mietpark">Erdnägel & Anker</a></li>
+            <li><a href="#mietpark">Bauzäune & Mobilzäune</a></li>
+            <li><a href="#mietpark">Bühnengitter</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Kontakt</h4>
+          <ul class="footer-links">
+            <li><a href="tel:022047061616"><i class="fas fa-phone yellow-text"></i> 02204 / 7061616</a></li>
+            <li><a href="mailto:info@eventnight.de"><i class="fas fa-envelope yellow-text"></i> info@eventnight.de</a></li>
+            <li><span><i class="fas fa-location-dot yellow-text"></i> Olper Straße 33, 51491 Overath</span></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Servicezeiten</h4>
+          <p style="font-size: 0.875rem; margin-bottom: 0.5rem;"><strong style="color: #FFF;">Telefonisch:</strong><br>Mo - Fr: 09:00 - 18:00 Uhr</p>
+          <p style="font-size: 0.875rem;"><strong style="color: #FFF;">Bürozeiten:</strong><br>Mo - Fr: 09:00 - 12:00 Uhr</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 EVENTNIGHT GmbH. Alle Rechte vorbehalten.</p>
+        <div>
+          <a href="#" style="color: #888; margin-left: 1rem;">Impressum</a>
+          <a href="#" style="color: #888; margin-left: 1rem;">Datenschutz</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>
